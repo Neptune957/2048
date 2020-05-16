@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee4da">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2048"
+        android:textSize="70dp"
+        android:textColor="#8f7a66"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Have fun"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textColor="#8f7a66"
+        android:textSize="30dp"
+        />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/start_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/welcome_button_style"
+        android:gravity="center"
+        android:text="开始游戏"
+        android:textColor="#fbfaf8"
+        android:layout_marginTop="70dp"
+        android:paddingVertical="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/restart_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/welcome_button_style"
+        android:gravity="center"
+        android:text="继续游戏"
+        android:textColor="#fbfaf8"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/rule_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/welcome_button_style"
+        android:gravity="center"
+        android:text="玩法介绍"
+        android:textColor="#fbfaf8"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/standard_mode_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/welcome_button_style"
+        android:gravity="center"
+        android:text="标准模式"
+        android:textColor="#fbfaf8"
+        android:layout_marginTop="70dp"
+        android:paddingVertical="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/racing_mode_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/welcome_button_style"
+        android:gravity="center"
+        android:text="竞速模式"
+        android:textColor="#fbfaf8"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/wild_mode_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/welcome_button_style"
+        android:gravity="center"
+        android:text="狂野模式"
+        android:textColor="#fbfaf8"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/homepage_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/welcome_button_style"
+        android:gravity="center"
+        android:text="个人主页"
+        android:textColor="#fbfaf8"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/welcome_button_style"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="#fbfaf8"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

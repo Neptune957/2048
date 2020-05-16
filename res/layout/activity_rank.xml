@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f9f9f9">
+
+        <Button
+            android:id="@+id/head"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9f9f9"
+            android:drawableLeft="@drawable/left"
+            android:gravity="left|center_vertical"
+            android:paddingVertical="15dp"
+            android:paddingLeft="15dp"
+            android:text=" 排行榜"
+            android:textColor="#606060"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="10dp"
+        android:layout_marginVertical="20dp">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/standardButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rank_selected_button"
+            android:text="标准"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_marginRight="1dp"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/racingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rank_unselected_button"
+            android:text="竞速"
+            android:textSize="20dp"
+            android:layout_marginRight="1dp"
+            android:textColor="#606060"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/wildButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rank_unselected_button"
+            android:text="狂野"
+            android:textSize="20dp"
+            android:textColor="#606060" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="还未有人玩过该模式哦！"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="1"
+                    android:textColor="#FFC125"
+                    android:textSize="40dp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="2"
+                    android:textColor="#D5D5D5"
+                    android:textSize="40dp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail2"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="3"
+                    android:textColor="#f17f3b"
+                    android:textSize="40dp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/icon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail3"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="4"
+                    android:textColor="#a0a0a0"
+                    android:textSize="40dp" />
+
+                <ImageView
+                    android:id="@+id/icon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail4"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="5"
+                    android:textColor="#a0a0a0"
+                    android:textSize="40dp" />
+
+                <ImageView
+                    android:id="@+id/icon5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail5"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="6"
+                    android:textColor="#a0a0a0"
+                    android:textSize="40dp" />
+
+                <ImageView
+                    android:id="@+id/icon6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail6"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="7"
+                    android:textColor="#a0a0a0"
+                    android:textSize="40dp" />
+
+                <ImageView
+                    android:id="@+id/icon7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail7"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="8"
+                    android:textColor="#a0a0a0"
+                    android:textSize="40dp" />
+
+                <ImageView
+                    android:id="@+id/icon8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail8"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rank_list"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="18dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/rank9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="9"
+                    android:textColor="#a0a0a0"
+                    android:textSize="40dp" />
+
+                <ImageView
+                    android:id="@+id/icon9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/boy" />
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="admin"
+                        android:textColor="#606060"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/score9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="分数: 2000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/detail9"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/rank_detail_button"
+                    android:text="详情"
+                    android:textColor="#007af5"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

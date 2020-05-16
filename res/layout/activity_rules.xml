@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#389973">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f9f9f9">
+
+        <Button
+            android:id="@+id/head"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9f9f9"
+            android:drawableLeft="@drawable/left"
+            android:gravity="left|center_vertical"
+            android:paddingVertical="15dp"
+            android:paddingLeft="15dp"
+            android:text=" 玩法介绍"
+            android:textColor="#606060"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/Q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#41be8d"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="Q: 2048的游戏规则是什么？"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/A1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#389973"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="A: 每次可以选择上下左右其中一个方向去移动，每移动一次，所有的数字方块都会往移动的方向靠拢外，系统也会在空白的地方随机出现一个数字方块，相同数字的方块在靠拢、相撞时会相加。不断的叠加最终拼凑出2048这个数字游戏就结束。"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#41be8d"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="Q: 什么是标准模式？"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/A2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#389973"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="A: 在标准模式下，用户不能使用清格子功能，但没有时间限制"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#41be8d"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="Q: 什么是竞速模式？"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/A3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#389973"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="A: 在竞速模式下，用户不能使用清格子功能，但有240秒时间限制，在规定的时间内比谁最终积分高"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Q4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#41be8d"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="Q: 什么是狂野模式？"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/A4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#389973"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="A: 在狂野模式下，用户可以使用清格子功能，但无时间限制"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/Q5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#41be8d"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="Q: 积分如何计算"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/A5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#389973"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:text="A: 每个数字对应的积分分别为各自的数值的平方,将9个格子内的数字积分求和即为总积分"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

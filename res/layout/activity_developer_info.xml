@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f9f9f9">
+
+        <Button
+            android:id="@+id/head"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f9f9f9"
+            android:drawableLeft="@drawable/left"
+            android:gravity="left|center_vertical"
+            android:paddingVertical="15dp"
+            android:paddingLeft="15dp"
+            android:text=" 开发信息"
+            android:textColor="#606060"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="开发者: 杨巨鑫" />
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="班级：软工1703班" />
+
+    <TextView
+        android:id="@+id/textView127"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="学号：201703340306" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="软件名称: 2048" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="软件类型: 游戏" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="开发工具: Android Studio2016" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="开始日期: 2019/6/14" />
+
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="历时: 17天" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="版本号：1.0.0" />
+
+    <TextView
+        android:id="@+id/textView143"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingVertical="10dp"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:text="最近更新：2019-7-01" />
+
+</LinearLayout>
